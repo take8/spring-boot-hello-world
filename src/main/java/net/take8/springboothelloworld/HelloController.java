@@ -15,7 +15,7 @@ public class HelloController {
 
   @RequestMapping("hello")
   public String hello(Model model, Locale locale) {
-    model.addAttribute("title", messageSource.getMessage("app.title", null, locale));
+    // model.addAttribute("title", messageSource.getMessage("app.title", null, locale));
     model.addAttribute("hello", "Hello World!");
     return "hello";
   }
