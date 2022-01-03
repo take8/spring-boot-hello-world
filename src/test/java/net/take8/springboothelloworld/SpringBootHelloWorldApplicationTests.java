@@ -16,20 +16,20 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)
 class SpringBootHelloWorldApplicationTests {
 
-	@Autowired
-	private TestRestTemplate restTemplate;
+  @Autowired
+  private TestRestTemplate restTemplate;
 
-	@Value("${local.server.port}")
-	int port;
+  @Value("${local.server.port}")
+  int port;
 
-	@Test
-	public void testHello() {
-		String body = this.restTemplate.getForObject("http://localhost:" + port, String.class);
-		assertThat(body).isEqualTo("Hello World!");
-	}
+  @Test
+  public void testHello() {
+    String body = this.restTemplate.getForObject("http://localhost:" + port, String.class);
+    assertThat(body).isEqualTo("Hello World!");
+  }
 
-//	@Test
-//	void contextLoads() {
-//	}
+//  @Test
+//  void contextLoads() {
+//  }
 
 }
