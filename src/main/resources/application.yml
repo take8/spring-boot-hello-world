@@ -3,3 +3,6 @@ spring:
     resources:
       cache:
         period: 86400  # 24時間
+  messages:
+    basename: "i18n/messages"
+    encoding: "UTF-8"
