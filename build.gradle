@@ -15,6 +15,9 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    // mybatisはバージョン指定が必須(spring-boot-gradle-plugin によって自動解決されない)
+    // https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.1'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
