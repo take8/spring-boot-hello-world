@@ -6,3 +6,7 @@ spring:
   messages:
     basename: "i18n/messages"
     encoding: "UTF-8"
+  datasource:
+    username: spring
+    password: spring
+    url: "jdbc:postgresql://localhost:5432/spring"
